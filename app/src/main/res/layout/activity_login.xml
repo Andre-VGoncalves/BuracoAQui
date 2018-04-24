@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e7f9ad"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -21,11 +22,13 @@
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:background="@drawable/texts"
+        android:paddingLeft="16dp"
         android:inputType="textPersonName"
         android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,10 +38,12 @@
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/texts"
+        android:paddingLeft="16dp"
         android:ems="10"
         android:inputType="textPassword"
         android:hint="Senha"
@@ -54,6 +59,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Entrar"
+        android:background="@drawable/btn_entrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
@@ -66,6 +72,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Google"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_google"
         app:layout_constraintEnd_toStartOf="@+id/btn_facebook"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_entrar" />
@@ -78,6 +86,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Facebook"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_google"
         app:layout_constraintTop_toBottomOf="@+id/btn_entrar" />
